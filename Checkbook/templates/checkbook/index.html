@@ -8,9 +8,11 @@
         <h5>Manage your existing account!</h5>
         <!-- Replace the <input> with a Django form including a dropdown list of accounts-->
         <label id="index-label">Choose Account:</label>
+        <form method="POST">
         {% csrf_token %}
         {{ form.account }}
         <button type="submit">Go to Account</button>
+        </form>
     </div>
     <hr>
     <div class="text-center">
